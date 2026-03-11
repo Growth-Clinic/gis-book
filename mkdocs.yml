@@ -1,0 +1,46 @@
+site_name: Building Communities into Economies
+site_description: A Systematic Approach to Growth and Innovation — the GIS Handbook
+repo_url: https://github.com/growth-clinic/gis-book
+repo_name: growth-clinic/gis-book
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  font:
+    text: DM Sans
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+extra_css:
+  - stylesheets/gis.css
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - 'Part 1 — Foundations':
+    - 'Chapter 1: Understanding Mental Models': chapters/01-mental-models.md
+    - 'Chapter 2: Community-Led Growth': chapters/02-community-led-growth.md
+    - 'Chapter 3: The Learning Engine': chapters/03-learning-engine.md
+    - 'Chapter 4: The Growth and Innovation System': chapters/04-growth-innovation-system.md
+  - 'Part 2 — Evolving Systems into Engines':
+    - 'Chapter 5: From GIS to GIOS': chapters/05-gis-to-gios.md
+    - 'Chapter 6: GIOS as an AI Platform': chapters/06-gios-ai-platform.md
+    - 'Chapter 7: The Architecture of Evolution': chapters/07-architecture-evolution.md
+    - 'Chapter 8: Community-Led AI Development': chapters/08-community-led-ai.md
+    - 'Chapter 9: The Future of Learning': chapters/09-future-of-learning.md
+    - 'Chapter 10: AI Evolution Pathways': chapters/10-ai-evolution-pathways.md
+    - 'Chapter 11: Building Tomorrow': chapters/11-building-tomorrow.md
+  - Conclusion: conclusion.md
+  - Appendix:
+    - 'Appendix A: Community Experience Assessment': appendix/appendix-a.md
+    - 'Appendix B: Case Studies in Community Innovation': appendix/appendix-b.md
