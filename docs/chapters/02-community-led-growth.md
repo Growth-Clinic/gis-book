@@ -8,6 +8,8 @@ Take S, the founder of Infused Organics, an organic hair and skincare brand. "We
 
 Traditional business models often operate on a one-to-many basis: one seller to many buyers, one teacher to many students. But the most powerful community growth happens when we enable many-to-many connections.
 
+![One-to-one and one-to-few connections versus the many-to-many distributed mesh network](../images/many-to-many.png)
+
 Consider The BodyLanguage Company, a dance studio in Lagos. Instead of seeing their business as simply teaching dance classes, they recognised a bigger opportunity. They hold free dance classes almost every day of the week at different lounges and bars. As people join these events, enjoy themselves, and meet others, something remarkable happens — they naturally want to get better at dancing. Who do they turn to for lessons? The same instructors who introduced them to the joy of dance through these free events.
 
 What makes this approach powerful is that it transforms a traditional service (dance lessons) into a community experience. The studio isn't just selling classes; they're creating spaces where people can experience the unique value of dance firsthand, connect with others who share their interests, progress naturally from casual participant to committed student, and become part of a larger community.

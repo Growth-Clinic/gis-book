@@ -1,6 +1,6 @@
 # Chapter 5: From GIS to GIOS
 
-![From community conversation, to shared knowledge, to a thriving local economy](images/part2-divider.png)
+![From community conversation, to shared knowledge, to a thriving local economy](../images/part2-divider.png)
 
 ## Why GIS Needs to Evolve
 
