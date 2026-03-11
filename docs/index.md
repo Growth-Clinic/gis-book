@@ -2,6 +2,8 @@
 
 **A Systematic Approach to Growth and Innovation**
 
+*By Osioke Itseuwa — Growth Clinic*
+
 ![A diverse community connected by a glowing network — representing the GIS in action](images/hero-banner.png)
 
 ---

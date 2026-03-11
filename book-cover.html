@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Cover — Building Communities into Economies</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 32px;
+    padding: 40px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .label {
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* ── SOCIAL SHARE / OPEN GRAPH — 1200 × 630 ── */
+  .cover-og {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    overflow: hidden;
+    background: #0d1117;
+    flex-shrink: 0;
+  }
+
+  /* background illustration layer */
+  .cover-og .bg-illustration {
+    position: absolute;
+    inset: 0;
+    background-image: url('docs/images/hero-banner.png');
+    background-size: cover;
+    background-position: center right;
+    opacity: 0.45;
+  }
+
+  /* left-side dark gradient for text legibility */
+  .cover-og .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      #0d1117 0%,
+      #0d1117 42%,
+      rgba(13,17,23,0.85) 58%,
+      rgba(13,17,23,0.2) 100%
+    );
+  }
+
+  /* green grid texture */
+  .cover-og .grid-texture {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(9,135,67,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(9,135,67,0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* green accent bar on left edge */
+  .cover-og .accent-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #20BF55 0%, #098743 100%);
+  }
+
+  .cover-og .content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 52px 64px 48px 72px;
+    max-width: 660px;
+  }
+
+  .cover-og .top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cover-og .series-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #20BF55;
+    margin-bottom: 20px;
+  }
+
+  .cover-og .title {
+    font-family: 'Fraunces', serif;
+    font-size: 62px;
+    font-weight: 900;
+    line-height: 1.0;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .cover-og .title em {
+    font-style: italic;
+    font-weight: 300;
+    color: #20BF55;
+  }
+
+  .cover-og .subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    max-width: 480px;
+  }
+
+  .cover-og .bottom-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cover-og .divider {
+    width: 48px;
+    height: 2px;
+    background: #20BF55;
+  }
+
+  .cover-og .author-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .cover-og .author-name {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+  }
+
+  .cover-og .author-org {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #20BF55;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .cover-og .url-tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.04em;
+    margin-top: 4px;
+  }
+
+  /* ── SQUARE FORMAT — 1080 × 1080 (Instagram / LinkedIn thumbnail) ── */
+  .cover-square {
+    width: 1080px;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+    background: #0d1117;
+    flex-shrink: 0;
+  }
+
+  .cover-square .bg-illustration {
+    position: absolute;
+    inset: 0;
+    background-image: url('docs/images/hero-banner.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+  }
+
+  .cover-square .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(13,17,23,0.3) 0%,
+      rgba(13,17,23,0.6) 40%,
+      #0d1117 72%,
+      #0d1117 100%
+    );
+  }
+
+  .cover-square .grid-texture {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(9,135,67,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(9,135,67,0.07) 1px, transparent 1px);
+    background-size: 54px 54px;
+  }
+
+  .cover-square .accent-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(180deg, #20BF55 0%, #098743 100%);
+  }
+
+  .cover-square .content {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 72px 80px 80px 88px;
+  }
+
+  .cover-square .series-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #20BF55;
+    margin-bottom: 28px;
+  }
+
+  .cover-square .title {
+    font-family: 'Fraunces', serif;
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 0.95;
+    color: #ffffff;
+    letter-spacing: -0.025em;
+    margin-bottom: 28px;
+  }
+
+  .cover-square .title em {
+    font-style: italic;
+    font-weight: 300;
+    color: #20BF55;
+    display: block;
+  }
+
+  .cover-square .subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+    margin-bottom: 48px;
+    max-width: 600px;
+  }
+
+  .cover-square .divider {
+    width: 56px;
+    height: 2px;
+    background: #20BF55;
+    margin-bottom: 24px;
+  }
+
+  .cover-square .author-name {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+
+  .cover-square .author-org {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #20BF55;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* open access badge */
+  .open-badge {
+    position: absolute;
+    top: 52px;
+    right: 52px;
+    border: 1.5px solid rgba(32,191,85,0.4);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #20BF55;
+  }
+
+</style>
+</head>
+<body>
+
+  <p class="label">Open Graph / Social Share — 1200 × 630px — screenshot this first</p>
+
+  <!-- OG / Social Share Cover -->
+  <div class="cover-og">
+    <div class="bg-illustration"></div>
+    <div class="gradient-overlay"></div>
+    <div class="grid-texture"></div>
+    <div class="accent-bar"></div>
+    <div class="content">
+      <div class="top-section">
+        <div class="series-label">Growth Clinic — Open Access</div>
+        <h1 class="title">Building<br><em>Communities</em><br>into Economies</h1>
+        <p class="subtitle">A Systematic Approach to Growth and Innovation</p>
+      </div>
+      <div class="bottom-section">
+        <div class="divider"></div>
+        <div class="author-block">
+          <div class="author-name">Osioke Itseuwa</div>
+          <div class="author-org">Growth Clinic</div>
+        </div>
+        <div class="url-tag">growth-clinic.github.io/gis-book</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="label">Square Format — 1080 × 1080px — screenshot this second (Instagram / LinkedIn)</p>
+
+  <!-- Square Cover -->
+  <div class="cover-square">
+    <div class="bg-illustration"></div>
+    <div class="gradient-overlay"></div>
+    <div class="grid-texture"></div>
+    <div class="accent-bar"></div>
+    <div class="open-badge">Open Access</div>
+    <div class="content">
+      <div class="series-label">Growth Clinic</div>
+      <h1 class="title">Building<br><em>Communities</em><br>into Economies</h1>
+      <p class="subtitle">A Systematic Approach to Growth and Innovation</p>
+      <div class="divider"></div>
+      <div class="author-name">Osioke Itseuwa</div>
+      <div class="author-org">Growth Clinic</div>
+    </div>
+  </div>
+
+</body>
+</html>

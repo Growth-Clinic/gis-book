@@ -1,10 +1,12 @@
 site_name: Building Communities into Economies
 site_description: A Systematic Approach to Growth and Innovation — the GIS Handbook
+site_author: Osioke Itseuwa
 repo_url: https://github.com/growth-clinic/gis-book
 repo_name: growth-clinic/gis-book
 
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
     scheme: default
     primary: custom
@@ -32,6 +34,15 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/gis.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/growth-clinic/gis-book
+
+copyright: >
+  © 2025 Osioke Itseuwa — Growth Clinic.
+  Published open-access under <a href="https://github.com/growth-clinic/gis-book/blob/main/LICENSE">AGPL-3.0</a>.
 
 nav:
   - Home: index.md
