@@ -1,0 +1,36 @@
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #098743;
+  --md-primary-fg-color--light: #20BF55;
+  --md-primary-fg-color--dark:  #076f38;
+  --md-accent-fg-color:         #20BF55;
+  --md-default-bg-color:        #fafafa;
+}
+
+body, .md-typeset {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #3D3D3D;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  color: #1D1E2C;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h1 { font-size: 2rem; line-height: 1.2; }
+.md-typeset h2 { font-size: 1.45rem; margin-top: 2.5rem; }
+
+.md-typeset p {
+  max-width: 72ch;
+}
+
+.md-nav__title {
+  color: #098743;
+  font-weight: 600;
+}
+
+.md-nav__link--active {
+  color: #098743 !important;
+  font-weight: 600;
+}

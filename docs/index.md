@@ -39,4 +39,5 @@ The principles and systems explored here can help you transform your community i
 This book is published open-access under the AGPL-3.0 licence. Fork it, remix it, translate it. Build with it.
 
 [View on GitHub](https://github.com/growth-clinic/gis-book){ .md-button .md-button--primary }
+&nbsp;
 [Try SYD Terminal](https://syd-protocol.github.io/terminal/){ .md-button }

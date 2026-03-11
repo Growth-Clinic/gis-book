@@ -21,6 +21,15 @@ theme:
     - search.highlight
     - toc.follow
 
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
 extra_css:
   - stylesheets/gis.css
 
