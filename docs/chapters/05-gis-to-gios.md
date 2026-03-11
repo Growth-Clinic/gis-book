@@ -1,5 +1,7 @@
 # Chapter 5: From GIS to GIOS
 
+![From community conversation, to shared knowledge, to a thriving local economy](images/part2-divider.png)
+
 ## Why GIS Needs to Evolve
 
 The Growth and Innovation System (GIS) has successfully created a structured way to capture knowledge, facilitate learning, and enable community growth. However, as communities using the system grow, several needs are becoming clear:

@@ -6,6 +6,8 @@ When I explained this to Sean Burrowes (former COO at Ingressive and Director of
 
 ## The Three Core Components
 
+![The Growth and Innovation System — three interlocking components: Smart Micro-content, Local Contributors, and Thinking Frameworks](images/gis-diagram.png)
+
 The GIS consists of three essential components that work together to enable community growth and innovation:
 
 ### 1. Smart Micro-content

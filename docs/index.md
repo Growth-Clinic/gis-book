@@ -2,6 +2,8 @@
 
 **A Systematic Approach to Growth and Innovation**
 
+![A diverse community connected by a glowing network — representing the GIS in action](images/hero-banner.png)
+
 ---
 
 > *"Sustainable growth and innovation don't come from top-down systems — they come from enabling communities to learn, share, and create value together."*
@@ -39,5 +41,3 @@ The principles and systems explored here can help you transform your community i
 This book is published open-access under the AGPL-3.0 licence. Fork it, remix it, translate it. Build with it.
 
 [View on GitHub](https://github.com/growth-clinic/gis-book){ .md-button .md-button--primary }
-&nbsp;
-[Try SYD Terminal](https://syd-protocol.github.io/terminal/){ .md-button }
